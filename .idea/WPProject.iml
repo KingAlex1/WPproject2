@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP" type="php">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/container" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/contracts" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/database" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/support" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/intervention/image" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/nesbot/carbon" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/psr/container" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/psr/simple-cache" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/wixel/gump" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/composer" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/doctrine/inflector" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/container" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/contracts" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/database" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/illuminate/support" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/intervention/image" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/nesbot/carbon" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/psr/container" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/psr/simple-cache" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/symfony/polyfill-mbstring" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/symfony/translation" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/twig/twig" />
+          <root url="file://$MODULE_DIR$/../PhpProject2/vendor/wixel/gump" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
