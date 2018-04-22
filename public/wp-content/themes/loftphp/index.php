@@ -5,8 +5,6 @@
         <h1 class="title-page">Последние новости и акции из мира туризма</h1>
         <div class="posts-list">
 
-
-
             <?php if (have_posts()) : while (have_posts()) :
                 the_post(); ?>
 
@@ -96,10 +94,10 @@
                 </ul>
             </div>
         </div>
-<!--        <div class="sidebar__sidebar-item" id="calendar"><h2>--><?php //_e('Calendar');
-//                ?><!--</h2>-->
-<!--            --><?php //get_calendar(); ?>
-<!--        </div>-->
+        <div class="sidebar__sidebar-item" id="calendar"><h2><?php _e('Calendar');
+                ?></h2>
+            <?php get_calendar(); ?>
+        </div>
     </div>
     </div>
 

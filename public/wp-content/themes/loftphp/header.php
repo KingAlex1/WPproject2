@@ -17,12 +17,12 @@
                 <div class="logotype-block">
                     <div class="logo-wrap"><a href="/"><img src="/img/logo.svg" alt="Логотип" class="logo-wrap__logo-img"></a></div>
                 </div>
-<!--                <nav class="main-navigation">-->
-<!--                    --><?php //wp_nav_menu([
-//                        'container' => false,
-//                        'menu_class' => 'nav-list'
-//                    ]); ?>
-<!--                </nav>-->
+                <nav class="main-navigation">
+                    <?php wp_nav_menu([
+                        'container' => false,
+                        'menu_class' => 'nav-list'
+                    ]); ?>
+                </nav>
 
             </div>
         </div>
