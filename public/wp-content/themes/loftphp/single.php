@@ -4,19 +4,27 @@
 the_post(); ?>
 <div class="content-wrapper">
     <div class="single-content content">
+
+
         <div class="article-title title-page">
             <?php the_title(); ?>
         </div>
-        <div class="article-image"><img src="img/post-image.jpg" alt="Image поста"></div>
+        <div class="article-image"><img src="<?php echo arkuwp_thumbnail(); ?>" alt="Image поста"></div>
         <div class="article-info">
             <div class="post-date"> <?php the_date(); ?></div>
         </div>
         <div class="article-text">
             <?php the_content(); ?>
         </div>
+        <?php $desc = get_field('description') ?>
+        <?php if($desc) :?>
+            <div>Условия акции: <?php echo get_field('description'); ?></div>
+        <?php endif; ?>
+        <?php $price = get_field('price');?>
+        <?php if($price) :?>
+            <div><h2>Price: <?php echo get_field('price'); ?></h2></div>
+        <?php endif; ?>
 
-
-        <div><h2>Price: <?php echo get_field('price'); ?></h2></div>
 
 
         <?php endwhile; else: ?>
@@ -25,7 +33,9 @@ the_post(); ?>
         <?php $prev = get_previous_post(); ?>
         <?php $next = get_next_post(); ?>
 
+
         <div class="article-pagination">
+            <?php if($prev) :?>
             <div class="article-pagination__block pagination-prev-left"><a
                         href="<?php the_permalink($prev->ID); ?>"
                         class="article-pagination__link"><i
@@ -40,11 +50,19 @@ the_post(); ?>
                                     href="<?php the_permalink($prev->ID); ?>"
                                     class="post-date">23.07.2016</a>
                         </div>
+
                         <div class="preview-article__text"> <?php echo $prev->post_title ?>
                         </div>
                     </div>
                 </div>
             </div>
+            <?php else: ?>
+            <div>
+                Дальше пусто .
+            </div>
+            <?php endif; ?>
+
+            <?php if($next) :?>
             <div class="article-pagination__block pagination-prev-right"><a href="<?php
                 the_permalink($next->ID); ?>"
                                                                             class="article-pagination__link">Сдедующая
@@ -64,7 +82,14 @@ the_post(); ?>
                     </div>
                 </div>
             </div>
+            <?php else: ?>
+                <div>
+                    Дальше пусто .
+                </div>
+            <?php endif; ?>
         </div>
+
+
     </div>
 
 
