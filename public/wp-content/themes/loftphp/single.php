@@ -94,32 +94,7 @@ the_post(); ?>
 
 
     <!-- sidebar-->
-    <div class="sidebar">
-        <div class="sidebar__sidebar-item">
-            <div class="sidebar-item__title">Теги</div>
-            <div class="sidebar-item__content">
-                <?php wp_tag_cloud(); ?>
-
-            </div>
-            <?php $categories = get_categories(); ?>
-        </div>
-        <div class="sidebar__sidebar-item">
-            <div class="sidebar-item__title">Категории</div>
-            <div class="sidebar-item__content">
-                <ul class="category-list">
-                    <?php foreach ($categories as $category) : ?>
-
-                        <li class="category-list__item"><a href="#"
-                                                           class="category-list__item__link">
-                                <?php echo $category->cat_name; ?> </a>
-
-                        </li>
-                    <?php endforeach; ?>
-
-                </ul>
-            </div>
-        </div>
-    </div>
+<?php get_sidebar() ?>
 </div>
 <?php get_footer(); ?>
 

@@ -4,12 +4,6 @@
         <div class="content">
             <h1 class="title-page">Последние новости и акции из мира туризма</h1>
             <div class="posts-list">
-<!--                при добавлении акций слетаем пагинация и криво работает Поиск без
-Акций все работает-->
-                <?php $posts = query_posts(['post_type' => ['post', 'promo']]) ?>
-                <?php wp_reset_postdata();
-                wp_reset_query(); ?>
-
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <?php if (get_post_type() == 'promo') : ?>
                         <div class="post-wrap" style="background: #B5F36D ">
@@ -72,39 +66,9 @@
                     <p><?php _e('Ничего не найдено.'); ?></p>
                 <?php endif; ?>
 
-
-                <?php wp_reset_postdata(); ?>
             </div>
             <?php the_posts_pagination(); ?>
         </div>
-        <div class="sidebar">
-            <div class="sidebar__sidebar-item">
-                <div class="sidebar-item__title">Теги</div>
-                <div class="sidebar-item__content">
-                    <?php wp_tag_cloud(); ?>
-                </div>
-            </div>
-            <div class="sidebar__sidebar-item">
-                <div class="sidebar-item__title">Категории</div>
-                <?php $categories = get_categories(); ?>
-                <div class="sidebar-item__content">
-                    <ul class="category-list">
-
-                        <?php foreach ($categories as $category) : ?>
-                            <li class="category-list__item"><a href="<?php echo
-                                $category->cat_name ?>"
-                                                               class="category-list__item__link">
-                                    <?php echo $category->cat_name; ?> </a>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-            </div>
-            <div class="sidebar__sidebar-item" id="calendar"><h2><?php _e('Calendar');
-                    ?></h2>
-                <?php get_calendar(); ?>
-            </div>
-        </div>
+        <?php get_sidebar(); ?>
     </div>
-
 <?php get_footer(); ?>
